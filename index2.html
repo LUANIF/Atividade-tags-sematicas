@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+        <p>Bem-vindo à minha página!</p>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="bloco">
+            <h2>Sobre o Site</h2>
+            <p>
+                Este site foi criado para apresentar informações
+                utilizando as principais tags semânticas do HTML.
+            </p>
+        </section>
+
+        <section class="bloco">
+            <h2>Artigos</h2>
+
+            <article>
+                <h3>Primeiro Artigo</h3>
+                <p>
+                    Este é um exemplo de artigo dentro da página.
+                </p>
+            </article>
+
+            <article>
+                <h3>Segundo Artigo</h3>
+                <p>
+                    Este é outro artigo criado para demonstrar
+                    a utilização da tag article.
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Informações Extras</h2>
+            <p>
+                Este espaço contém informações complementares
+                ao conteúdo principal da página.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Meu Site</p>
+        <p>Desenvolvido por Luan</p>
+    </footer>
+
+</body>
+</html>
+
+stylecss
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Cabeçalho */
+header {
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+/* Menu */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Área principal */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Os dois blocos superiores */
+.bloco {
+    border: 2px solid #333;
+    padding: 20px;
+    min-height: 220px;
+}
+
+.bloco h2 {
+    margin-top: 0;
+}
+
+/* Bloco inferior */
+aside {
+    grid-column: 1 / 3;
+    border: 2px solid #333;
+    padding: 20px;
+    min-height: 150px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+/* Rodapé */
+footer {
+    border: 2px solid #333;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
